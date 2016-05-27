@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PWImagePickerController" customModule="PWPhotosLibrary" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="qhU-1Z-Mqh" id="9bS-er-K0b"/>
+                <outlet property="flowLayout" destination="yo1-wn-LMv" id="C4x-fq-I95"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qhU-1Z-Mqh">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <collectionViewLayout key="collectionViewLayout" id="yo1-wn-LMv" customClass="PWCollectionViewFlowLayout" customModule="PWPhotosLibrary"/>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qhU-1Z-Mqh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GcZ-xk-POq"/>
+                <constraint firstItem="qhU-1Z-Mqh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Vz7-wl-FFo"/>
+                <constraint firstAttribute="trailing" secondItem="qhU-1Z-Mqh" secondAttribute="trailing" id="mHD-DX-uGB"/>
+                <constraint firstAttribute="bottom" secondItem="qhU-1Z-Mqh" secondAttribute="bottom" id="qYZ-kX-8uM"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
