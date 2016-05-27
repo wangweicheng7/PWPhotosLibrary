@@ -8,6 +8,8 @@
 
 import UIKit
 
-class UIImage: NSObject {
-
+extension UIImage {
+    
+    
+    
 }

@@ -6,8 +6,9 @@
 //  Copyright © 2016年 weicheng wang. All rights reserved.
 //
 
-import UIKit
+import Photos
 
-class PWAlbumModel: NSObject {
-
+class PWAlbumModel: PHAsset {
+    
+    var selected = false
 }

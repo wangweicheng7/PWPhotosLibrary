@@ -8,6 +8,9 @@
 
 import UIKit
 
+let idePreviewCell = "PWPreviewCellIdentifier"
+
+
 class PWPreviewCell: UICollectionViewCell {
 
     override func awakeFromNib() {

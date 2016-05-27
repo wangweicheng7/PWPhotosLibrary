@@ -7,55 +7,50 @@
 //
 
 import UIKit
-
-private let reuseIdentifier = "Cell"
+import Photos
 
 class PWPreviewViewController: UICollectionViewController {
+    
+    var assetCollection : PHAssetCollection?
+    
+    private var assetArray = [PHAsset]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        self.collectionView!.registerNib(UINib(nibName: "PWPreviewCell", bundle: nil), forCellWithReuseIdentifier: idePreviewCell)
+        
+        guard let assetCollection = assetCollection else {
+            fatalError(" assetCollection can not be nil")
+        }
+        
+        PWPhotosManager.assets(assetCollection: assetCollection) { (assetArr) in
+            self.assetArray += assetArr
+            self.collectionView!.reloadData()
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
     // MARK: UICollectionViewDataSource
 
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return assetArray.count
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath)
-    
-        // Configure the cell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(idePreviewCell, forIndexPath: indexPath) as! PWPreviewCell
+        
     
         return cell
     }

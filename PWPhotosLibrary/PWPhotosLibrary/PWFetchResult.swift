@@ -6,8 +6,10 @@
 //  Copyright © 2016年 weicheng wang. All rights reserved.
 //
 
-import UIKit
+import Photos
 
 class PWFetchResult: PHFetchResult {
-
+    
+    var title : String?
+    
 }

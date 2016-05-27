@@ -10,4 +10,13 @@ import UIKit
 
 class PWPreviewFlowLayout: UICollectionViewFlowLayout {
 
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        itemSize = CGSizeMake(ScreenWidth, ScreenHeight)
+        minimumLineSpacing = 0
+        minimumInteritemSpacing = 0
+        scrollDirection = .Horizontal
+        sectionInset = UIEdgeInsetsZero
+    }
+    
 }

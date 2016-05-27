@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SwiftErrorBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PWPhotosLibrary/PWPhotosLibrary/PWPhotoGroupViewController.swift"
+            timestampString = "485956014.940914"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PWPhotosLibrary/PWPhotosLibrary/PWPhotosManager.swift"
+            timestampString = "485959329.279871"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "album(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static PWPhotosLibrary.PWPhotosManager.album ((Swift.Array&lt;__ObjC.PHAssetCollection&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "PWPhotosLibrary"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangweicheng/Desktop/PWPhotosLibrary/PWPhotosLibrary/PWPhotosLibrary/PWPhotosManager.swift"
+                  timestampString = "486009219.212944"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static PWPhotosLibrary.PWPhotosManager.(album ((Swift.Array&lt;__ObjC.PHAssetCollection&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "PWPhotosLibrary"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangweicheng/Desktop/PWPhotosLibrary/PWPhotosLibrary/PWPhotosLibrary/PWPhotosManager.swift"
+                  timestampString = "486009219.213181"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PWPhotosLibrary/PWPhotosLibrary/PWPhotoGroupCell.swift"
+            timestampString = "485959329.279871"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "setResult(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PWPhotosLibrary.PWPhotoGroupCell.setResult (__ObjC.PHAssetCollection) -&gt; ()"
+                  moduleName = "PWPhotosLibrary"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangweicheng/Desktop/PWPhotosLibrary/PWPhotosLibrary/PWPhotosLibrary/PWPhotoGroupCell.swift"
+                  timestampString = "486009219.214499"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "1408">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PWPhotosLibrary.PWPhotoGroupCell.(setResult (__ObjC.PHAssetCollection) -&gt; ()).(closure #1)"
+                  moduleName = "PWPhotosLibrary"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangweicheng/Desktop/PWPhotosLibrary/PWPhotosLibrary/PWPhotosLibrary/PWPhotoGroupCell.swift"
+                  timestampString = "486009219.214672"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PWPhotosLibrary/PWPhotosLibrary/PWCollectionViewFlowLayout.swift"
+            timestampString = "486009649.159327"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "layoutAttributesForElementsInRect(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PWPhotosLibrary/PWPhotosLibrary/PWCollectionViewFlowLayout.swift"
+            timestampString = "486009649.159327"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "layoutAttributesForElementsInRect(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

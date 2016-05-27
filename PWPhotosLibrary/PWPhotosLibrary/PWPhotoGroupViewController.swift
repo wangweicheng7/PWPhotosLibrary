@@ -7,29 +7,48 @@
 //
 
 import UIKit
+import Photos
 
-class PWPhotoGroupViewController: UIViewController {
+class PWPhotoGroupViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+    private var resultArr = [PHAssetCollection]()
 
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.registerNib(UINib(nibName: "PWPhotoGroupCell", bundle: nil), forCellReuseIdentifier: idePhotoGroupCell)
+        
+        PWPhotosManager.album { (resultArr) in
+            self.resultArr += resultArr
+            self.tableView.reloadData()
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return resultArr.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(idePhotoGroupCell, forIndexPath: indexPath) as! PWPhotoGroupCell
+        cell.setResult(resultArr[indexPath.row])
+        
+        return cell
     }
-    */
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 82
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let photoVC = PWPhotoViewController()
+        photoVC.assetCollection = resultArr[indexPath.row]
+        
+        
+        navigationController?.pushViewController(photoVC, animated: true)
+    }
 
 }
